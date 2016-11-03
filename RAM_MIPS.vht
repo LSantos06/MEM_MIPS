@@ -96,12 +96,6 @@ BEGIN
 		Clock <= '1'; wait for 5 ps;
 	end loop;
 
-	-- A resultado da operacao eh exibido de forma atrasada,
-	-- portanto mais um Clock deve ser batido para exibicao
-	-- do ultimo resultado.
-	Clock <= '0'; wait for 5 ps;
-	Clock <= '1'; wait for 5 ps;
-
 WAIT;
 END PROCESS init;
 always : PROCESS
